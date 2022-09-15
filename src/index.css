@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Familjen+Grotesk:wght@600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.App {
+  max-width: 1080px;
+  min-height: 100vh;
+  margin: 0 auto;  
+  background: #d5d4d4;  
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  flex-basis: 33%;  
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  gap: 2em;
+  justify-content: flex-end;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #222;
+  margin-right: 2em;
+  position: relative;
+}
+
+.links li:nth-of-type(1) a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -35px;
+  width: 1px;
+  height: 100%;
+  background-color: #222;
+}
+
+.links li a:hover {
+  color: #f1356d;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create button[disabled] {
+  opacity: .6;
+}
+
+/* Not found */
+
+.not-found .link {
+  margin-top: 2em;
+  text-decoration: none;
+  background: #fff;
+  color: #f1356d;
+  font-weight: 700;
+  padding: .5em 1em;
+  border-radius: 100px;
+}
